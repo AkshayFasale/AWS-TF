@@ -45,7 +45,7 @@ resource "aws_security_group" "instance_sg_http" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"] # Consider restricting to your IP for security
+    cidr_blocks = ["0.0.0.0/0"]
   }
 
   ingress {
